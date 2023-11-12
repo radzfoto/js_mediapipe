@@ -1,0 +1,25 @@
+{
+    "id": "node-red-flow",
+    "label": "Image Processing Pipeline",
+    "nodes": [
+        {
+            "id": "capture",
+            "type": "capture",
+            "name": "Capture Image",
+            "wires": [["detect"]]
+        },
+        {
+            "id": "detect",
+            "type": "detect",
+            "name": "Process Image",
+            "wires": [["display"]]
+        },
+        {
+            "id": "display",
+            "type": "display",
+            "name": "Display Image",
+            "wires": []
+        }
+    ]
+}
+
